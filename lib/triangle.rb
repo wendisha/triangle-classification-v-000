@@ -9,7 +9,11 @@ class Triangle
   
   def kind 
     if lenght1 <= 0 || lenght2 <= 0 || lenght3 <= 0 
-      
+      begin
+        raise PartnerError
+      rescue PartnerError => error
+          puts error.message
+      end
     elsif lenght1 == lenght2 && lenght2 == lenght3 
       return :equilateral 
     elsif lenght1 != lenght2 && lenght2 == lenght3 || lenght1 != lenght2 && lenght1 == lenght3 || lenght1 != lenght3 && lenght1 == lenght2
