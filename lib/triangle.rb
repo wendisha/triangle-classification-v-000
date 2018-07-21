@@ -10,6 +10,10 @@ class Triangle
   def kind 
     if lenght1 == lenght2 && lenght2 == lenght3 
       return :equilateral 
+    elsif lenght1 != lenght2 && lenght2 == lenght3 
+      return :isosceles 
+    elsif  
+      
     end
   end
 end
