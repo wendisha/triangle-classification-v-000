@@ -8,7 +8,7 @@ class Triangle
   end
   
   def kind 
-    if lenght1 <= 0 || lenght2 <= 0 || lenght3 <= 0 
+    if (lenght1 <= 0 || lenght2 <= 0 || lenght3 <= 0) || ((lenght1 + lenght2 > lenght3) || (lenght1 + lenght3 > lenght2) || (lenght2 + lenght3 > lenght1))
       #begin
         raise TriangleError 
       #rescue TriangleError => error
