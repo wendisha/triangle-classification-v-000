@@ -15,7 +15,5 @@ class Triangle
     elsif lenght1 != lenght2 && lenght1 != lenght3 && lenght2 != lenght3 
       return :scalene
     end
-      
-    end
   end
 end
