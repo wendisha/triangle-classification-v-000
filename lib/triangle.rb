@@ -17,6 +17,6 @@ class Triangle
     end
   end
   
-  class TriangleError 
+  class TriangleError < StandarError
   end
 end
