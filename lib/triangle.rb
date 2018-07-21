@@ -10,7 +10,8 @@ class Triangle
   def kind 
     if lenght1 <= 0 || lenght2 <= 0 || lenght3 <= 0
       raise TriangleError 
-    elsif (@l1 + @l2 <= @l3) || (@l1 + @l3 <= @l2) || (@l2 + @l3 <= @l1)
+    elsif (lenght1 + lenght2 <= lenght3) || (lenght1 + lenght3 <= lenght2) || (lenght2 + lenght3 <= lenght1)
+      raise TriangleError
     elsif lenght1 == lenght2 && lenght2 == lenght3 
       return :equilateral 
     elsif lenght1 != lenght2 && lenght2 == lenght3 || lenght1 != lenght2 && lenght1 == lenght3 || lenght1 != lenght3 && lenght1 == lenght2
