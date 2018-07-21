@@ -10,8 +10,8 @@ class Triangle
   def kind 
     if lenght1 <= 0 || lenght2 <= 0 || lenght3 <= 0 
       begin
-        raise PartnerError
-      rescue PartnerError => error
+        raise TriangleError 
+      rescue TriangleError => error
           puts error.message
       end
     elsif lenght1 == lenght2 && lenght2 == lenght3 
