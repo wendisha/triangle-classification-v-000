@@ -8,5 +8,8 @@ class Triangle
   end
   
   def kind 
+    if lenght1 == lenght2 == lenght3 
+      return :equilateral 
+    end
   end
 end
