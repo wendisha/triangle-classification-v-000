@@ -17,6 +17,8 @@ class Triangle
       return :isosceles 
     elsif lenght1 != lenght2 && lenght1 != lenght3 && lenght2 != lenght3 
       return :scalene
+    else 
+      raise TriangleError
     end
   end
   
