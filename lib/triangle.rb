@@ -12,7 +12,9 @@ class Triangle
       return :equilateral 
     elsif lenght1 != lenght2 && lenght2 == lenght3 || lenght1 != lenght2 && lenght1 == lenght3 || lenght1 != lenght3 && lenght1 == lenght2
       return :isosceles 
-    elsif  
+    elsif lenght1 != lenght2 && lenght1 != lenght3 && lenght2 != lenght3 
+      return :scalene
+    end
       
     end
   end
